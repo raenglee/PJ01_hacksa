@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학사정보시스템</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #005a9e;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>학사정보시스템</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#grades">성적조회</a></li>
+                <li><a href="#schedule">수강신청</a></li>
+                <li><a href="#personal">개인정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>환영합니다</h2>
+            <p>학사정보시스템에 오신 것을 환영합니다.</p>
+        </section>
+
+        <section id="grades" style="display: none;">
+            <h2>성적조회</h2>
+            <table>
+                <tr>
+                    <th>과목명</th>
+                    <th>학점</th>
+                    <th>성적</th>
+                </tr>
+                <tr>
+                    <td>데이터베이스</td>
+                    <td>3</td>
+                    <td>A+</td>
+                </tr>
+                <!-- 추가 성적 정보 -->
+            </table>
+        </section>
+
+        <section id="schedule" style="display: none;">
+            <h2>수강신청</h2>
+            <form>
+                <label for="course">과목 검색:</label>
+                <input type="text" id="course" name="course">
+                <button type="submit">검색</button>
+            </form>
+            <!-- 수강 가능한 과목 목록 -->
+        </section>
+
+        <section id="personal" style="display: none;">
+            <h2>개인정보</h2>
+            <p>이름: 홍길동</p>
+            <p>학번: 20240001</p>
+            <p>학과: 컴퓨터공학과</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 학사정보시스템. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript 코드는 여기에 추가됩니다
+    </script>
+</body>
+</html>
